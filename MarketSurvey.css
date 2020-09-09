@@ -1,0 +1,57 @@
+.FirstLine {
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.SecondLine{
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+}
+
+.Age{
+    padding-bottom: 50px;
+}
+
+.AgeIncomeSelect{
+    width: 600px;
+}
+
+th{
+    border: 1px solid darkgrey;
+
+}
+td{
+    border: 1px solid darkgrey;
+    height: 25%;
+}
+
+.Table2{
+    border-collapse: collapse;
+    border: 1px solid darkgrey;
+    width: 100%;
+}
+
+.TableContainer{
+    width: 900px;
+    height: 100px;
+}
+.FirstRow{
+    width: 40%;
+    height: 30px;
+}
+
+.NextRows{
+    width: 15%;
+    text-align: center;
+}
+
+.Table2 input[type=radio] {
+    display: block;
+    margin: 0 auto;
+}
+.Table2 label {
+    display: inline-block;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MarketSurvey</title>
+    <link rel="stylesheet" href="MarketSurvey.css">
+</head>
+<body>
+
+    <div class="Header">
+        <p class="FirstLine">Market Research Survey </p>
+        <p class="SecondLine">Please take a few moments to complete this satisfactory survey</p>
+    </div>
+    <hr/>
+    <form action=" " method="get" id="form1">
+    <div class="AgeIncome">
+        <label class="Age">What is your age range?</label> <br>
+
+        <select name="Age" class="AgeIncomeSelect">
+            <option value="0-9">0-9</option>
+            <option value="10-19">10-19</option>
+            <option value="20-40">20-40</option>
+            <option value="40+">40+</option>
+        </select>
+        <br>
+        <label class="Income">What is your income range?</label> <br>
+        <select name="Income" id="Income" class="AgeIncomeSelect">
+            <option value="$0 - $25,000">$0 - $25000</option>
+            <option value="$25,001 - $50,000">$25,001 - $50,000</option>
+            <option value="$50,001 - $100,000">$25,001 - $50,000</option>
+            <option value="$100,000+">$100,000+</option>
+        </select>
+    </div>
+    <div class="GenderID">
+        <p style="font-weight: bold">How many would you like to order?</p>
+        <input type="radio" name="rd"/> Male <br/>
+        <input type="radio" name="rd"/> Female <br/>
+        <input type="radio" name="rd"/> Nonbinary <br/>
+        <input type="radio" name="rd"/> Other <br/>
+        <input type="text" class="InputText" style="margin-left: 20px;"/>
+    </div>
+
+    <div class="Product">
+        <p style="font-weight: bold">which of the products have you purchased in the last 2 months. Please check all that apply</p>
+        <input type="checkbox" id="Product1" name="Product1" value="Product 1">
+        <label for="Product1"> Product 1</label><br>
+        <input type="checkbox" id="Product2" name="Product2" value="Product 2">
+        <label for="Product2"> Product 2</label><br>
+        <input type="checkbox" id="Product3" name="Product3" value="Product 3">
+        <label for="Product3"> Product 3</label><br>
+    </div>
+
+    <div class="Frequency">
+        <p style="font-weight: bold">How often would you use our new product?</p>
+        <input type="radio" name="rd"/> Daily <br/>
+        <input type="radio" name="rd"/> weekly <br/>
+        <input type="radio" name="rd"/> Monthly <br/>
+    </div>
+
+    <div class="Pay">
+        <p style="font-weight: bold">What would you pay for the new product?</p>
+            $
+            <input type="text" name="dollars" style="width: 80px;">.<input type="text" name="cents"style="width: 40px;"> <br>
+            &nbsp&nbsp&nbsp dollars &nbsp &nbsp &nbsp   &nbsp&nbsp&nbsp&nbsp&nbsp       cents
+    </div>
+        <div class="NewFeatures">
+            <textarea name="NewFeatures" style="width: 600px; height:75px;"> </textarea>
+        </div>
+    <div class="TableContainer">
+        <table class="Table2">
+            <tr class="TableHeader">
+                <th class="FirstRow"></th>
+                <th class="NextRows">Strongly Disagree</th>
+                <th class="NextRows">Disagree</th>
+                <th class="NextRows">Agree</th>
+                <th class="NextRows">Strongly Disagree</th>
+            </tr>
+            <tr>
+                <td style="font-weight: bold" class="FirstRow">Our products are priced fairly.</td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 1 <br/></label></td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 2 <br/></label></td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 3 <br/></label></td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 4 <br/></label></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold" class="FirstRow">Our products are high quality.</td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 1 <br/></label></td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 2 <br/></label></td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 3 <br/></label></td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 4 <br/></label></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold" class="FirstRow">You would recommend our product to a friend or a coworker.</td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 1 <br/></label></td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 2 <br/></label></td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 3 <br/></label></td>
+                <td class="NextRows"><label><input type="radio" name="rd"/> 4 <br/></label></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    </form><br>
+
+    <button type="submit" form="form1" value="Submit">Submit</button>
+
+</body>
+</html>
